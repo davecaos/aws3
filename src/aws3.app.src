@@ -1,0 +1,20 @@
+{application, aws3,
+ [
+  {description,
+   "An application for upload files to AWS S3"},
+  {vsn, "0.0.1"},
+  {applications,
+    [kernel,
+     stdlib,
+     erlcloud,
+     inets,
+     ssl
+    ]},
+  {modules, []},
+  {mod, {aws3, []}},
+  {maintainers, ["davecaos"]},
+  {licenses, ["MIT"]},
+  {links, [{"Github", "https://github.com/davecaos/aws3"}]},
+  {build_tools, ["erlang.mk"]}
+ ]
+}.
