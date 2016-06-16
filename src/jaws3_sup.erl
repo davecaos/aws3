@@ -1,4 +1,4 @@
--module(aws3_sup).
+-module(jaws3_sup).
 
 -behaviour(supervisor).
 

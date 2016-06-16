@@ -1,4 +1,4 @@
-{application, aws3,
+{application, jaws3,
  [
   {description,
    "An application for upload files to AWS S3"},
@@ -11,7 +11,7 @@
      ssl
     ]},
   {modules, []},
-  {mod, {aws3, []}},
+  {mod, {jaws3, []}},
   {maintainers, ["davecaos"]},
   {licenses, ["MIT"]},
   {links, [{"Github", "https://github.com/davecaos/aws3"}]},

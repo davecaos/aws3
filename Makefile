@@ -1,4 +1,4 @@
-PROJECT = aws3
+PROJECT = jaws3
 
 DEPS =  sync erlcloud minmay
 dep_sync     = git https://github.com/rustyio/sync.git     master
