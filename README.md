@@ -1,2 +1,2 @@
-# aws3
+# jaws3
 This is a Erlang library for upload files to AWS S3

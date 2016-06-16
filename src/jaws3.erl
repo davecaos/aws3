@@ -1,4 +1,4 @@
--module(aws3).
+-module(jaws3).
 
 -export([ start/0
         , start/2
@@ -10,17 +10,17 @@
 %% application
 %% @doc Starts the application
 start() ->
-  {ok, _Started} = application:ensure_all_started(aws3).
+  {ok, _Started} = application:ensure_all_started(jaws3).
 
 %% @doc Stops the application
 stop() ->
-  application:stop(aws3).
+  application:stop(jaws3).
 
 %% behaviour
 %% @private
 start(_StartType, _StartArgs) ->
-  ok = minmay:start(),
-  aws3_sup:start_link().
+  %ok = minmay:start(),
+  jaws3_sup:start_link().
 
 %% @private
 stop(_State) ->
@@ -28,7 +28,7 @@ stop(_State) ->
 
 -spec upload_files([string()]) -> [tuple()].
 upload_files(FilesPath) ->
-  #{aws3_bucket := Bucket} = aws3_utils:config(),
+  #{aws3_bucket := Bucket} = jaws3_utils:config(),
   %% TODO this comprehension list should be paralized.
   [upload_file(list_to_binary(Img), Bucket) || Img <- FilesPath].
 
@@ -36,7 +36,7 @@ upload_files(FilesPath) ->
 upload_file(FileName, Bucket) -> 
   ImageData      = read_data_file(FileName),
   FileNameString = binary_to_list(FileName),
-  {ok, AwsUrl} = aws3_utils:upload(Bucket, FileNameString, ImageData),
+  {ok, AwsUrl} = jaws3_utils:upload(Bucket, FileNameString, ImageData),
   AwsUrl.
 
 read_data_file(FileName) ->

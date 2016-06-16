@@ -1,4 +1,4 @@
--module(aws3_utils).
+-module(jaws3_utils).
 
 -export([ config/0
         , upload/3
@@ -7,9 +7,9 @@
 
 -spec config() -> map().
 config() ->
-  AWS3Key    = application:get_env(aws3, s3_access_key, undefined),
-  AWS3Secret = application:get_env(aws3, s3_access_secret, undefined),
-  Bucket     = application:get_env(aws3, s3_bucket, undefined),
+  AWS3Key    = application:get_env(jaws3, s3_access_key, undefined),
+  AWS3Secret = application:get_env(jaws3, s3_access_secret, undefined),
+  Bucket     = application:get_env(jaws3, s3_bucket, undefined),
   ok = erlcloud_s3:configure(AWS3Key, AWS3Secret),
   #{aws3_key => AWS3Key, aws3_secret => AWS3Secret, aws3_bucket => Bucket}.
 
