@@ -3,7 +3,7 @@
 This is a Erlang library for upload files to AWS S3 
 ![AWS](https://github.com/davecaos/jaws3/blob/master/S3.png)
 
-First et al, you have to add yours aws s3 certificates in the ![sys.config](https://github.com/davecaos/jaws3/blob/master/rel/sys.config) file.
+First et al, you have to add yours aws s3 certificates in the [sys.config](https://github.com/davecaos/jaws3/blob/master/rel/sys.config) file.
 
 ```erlang
 [
