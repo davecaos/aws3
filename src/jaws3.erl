@@ -19,7 +19,7 @@ stop() ->
 %% behaviour
 %% @private
 start(_StartType, _StartArgs) ->
-  %ok = minmay:start(),
+  ok = minmay:start(),
   jaws3_sup:start_link().
 
 %% @private
@@ -27,16 +27,15 @@ stop(_State) ->
   ok.
 
 -spec upload_files([string()]) -> [tuple()].
-upload_files(FilesPath) ->
+upload_files(FilesPaths) ->
   #{aws3_bucket := Bucket} = jaws3_utils:config(),
-  %% TODO this comprehension list should be paralized.
-  [upload_file(list_to_binary(Img), Bucket) || Img <- FilesPath].
+  parallel_lists:pmap(fun upload_file/1 , FilesPaths).
 
--spec upload_file(string(), string()) -> string().
-upload_file(FileName, Bucket) -> 
-  ImageData      = read_data_file(FileName),
-  FileNameString = binary_to_list(FileName),
-  {ok, AwsUrl} = jaws3_utils:upload(Bucket, FileNameString, ImageData),
+-spec upload_file(string()) -> string().
+upload_file(FilesPath) -> 
+  ImageData = read_data_file(FilesPath),
+  Bucket = application:get_env(jaws3, s3_bucket, undefined),
+  {ok, AwsUrl} = jaws3_utils:upload(Bucket, FilesPath, ImageData),
   AwsUrl.
 
 read_data_file(FileName) ->
