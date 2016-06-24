@@ -41,5 +41,5 @@ upload_file(FileName, Bucket) ->
 
 read_data_file(FileName) ->
   {ok, Data}      = file:read_file(FileName),
-  MimeContentType = minmay:get_mime_type(FileName),
+  MimeContentType = minmay:from_filename(FileName),
   {MimeContentType, Data}.
