@@ -1,7 +1,6 @@
-# jaws3
+# jaws3     <img src="https://github.com/davecaos/jaws3/blob/master/S3.png"  height="50" width="198">
 ---------
-This is a Erlang library for upload files to AWS S3 
-![AWS](https://github.com/davecaos/jaws3/blob/master/S3.png)
+This is a Erlang library for upload easily files to AWS S3 
 
 First et al, you have to add yours aws s3 certificates in the [sys.config](https://github.com/davecaos/jaws3/blob/master/rel/sys.config) file.
 
