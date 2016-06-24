@@ -1,7 +1,6 @@
 -module(parallel_lists).
 
--export([ start/0
-        , pmap/2
+-export([ pmap/2
         , pforeach/2
         , npforeach/2
         ]).
