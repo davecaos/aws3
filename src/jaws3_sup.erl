@@ -6,11 +6,13 @@
 -export([init/1]).
 
 %% admin api
+-spec start_link() -> any().
 start_link() ->
   supervisor:start_link({local, ?MODULE}, ?MODULE, {}).
 
 
 %% behaviour callbacks
+-spec init(tuple()) -> tuple().
 init({}) ->
     {ok,
      {

@@ -1,0 +1,11 @@
+{application,erlcloud,
+             [{description,"Erlang cloud computing library"},
+              {vsn,"2.0.0"},
+              {registered,[]},
+              {applications,[stdlib,kernel,crypto,public_key,ssl,xmerl,inets,
+                             jsx,eini,lhttpc]},
+              {modules,[]},
+              {env,[]},
+              {licenses,["MIT"]},
+              {links,[{"Github","https://github.com/erlcloud/erlcloud"}]},
+              {maintainers,[]}]}.

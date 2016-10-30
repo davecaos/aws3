@@ -1,20 +1,21 @@
 {application, jaws3,
  [
   {description,
-   "An application for upload files to AWS S3"},
-  {vsn, "0.0.1"},
+   "An Erlang/Elixir application for upload files easily to AWS S3"},
+  {vsn, "0.1.0"},
   {applications,
     [kernel,
      stdlib,
      erlcloud,
+     erlware_commons,
      inets,
      ssl
     ]},
   {modules, []},
   {mod, {jaws3, []}},
-  {maintainers, ["davecaos"]},
+  {maintainers, ["David Cesar Hernan Cao"]},
   {licenses, ["MIT"]},
-  {links, [{"Github", "https://github.com/davecaos/aws3"}]},
-  {build_tools, ["erlang.mk"]}
+  {links, [{"Github", "https://github.com/davecaos/jaws3"}]},
+  {build_tools, ["make", "rebar3", "mix"]}
  ]
 }.

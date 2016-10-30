@@ -1,9 +1,12 @@
 PROJECT = jaws3
 
-DEPS =  sync erlcloud minmay
-dep_sync     = git https://github.com/rustyio/sync.git      master
-dep_minmay   = git https://github.com/davecaos/minmay.git   1.0.0
-dep_erlcloud = git https://github.com/erlcloud/erlcloud.git 0.13.4
+DEPS = erlcloud minmay erlware_commons
+TEST_DEPS = sync
+
+dep_sync     = hex 0.1.3
+dep_minmay   = hex 1.1.0
+dep_erlcloud = hex 2.0.0
+dep_erlware_commons = hex 0.21.0
 
 include erlang.mk
 

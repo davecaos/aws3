@@ -1,0 +1,7 @@
+%{"cf": {:hex, :cf, "0.2.1", "69d0b1349fd4d7d4dc55b7f407d29d7a840bf9a1ef5af529f1ebe0ce153fc2ab", [:rebar3], []},
+  "eini": {:hex, :eini, "1.2.4", "abd64a0533398a6d714d21219bb85f2d41fdb42665ac4080939b7bfa8e55f386", [:rebar3], []},
+  "erlcloud": {:hex, :erlcloud, "2.0.0", "257a9e161d4b3e86571dc7d99d021a6884adefbf3895ebd6b3497b36466fd0ab", [:rebar3], [{:eini, "1.2.4", [hex: :eini, optional: false]}, {:jsx, "2.8.0", [hex: :jsx, optional: false]}, {:lhttpc, "1.4.0", [hex: :lhttpc, optional: false]}]},
+  "erlware_commons": {:hex, :erlware_commons, "0.21.0", "a04433071ad7d112edefc75ac77719dd3e6753e697ac09428fc83d7564b80b15", [:rebar3], [{:cf, "0.2.1", [hex: :cf, optional: false]}]},
+  "jsx": {:hex, :jsx, "2.8.0", "749bec6d205c694ae1786d62cea6cc45a390437e24835fd16d12d74f07097727", [:mix, :rebar], []},
+  "lhttpc": {:hex, :lhttpc, "1.4.0", "61760afec1ddb98e47972be93b13fbff487a63d65b91a02c41122a0adf83da38", [:rebar3], []},
+  "minmay": {:hex, :minmay, "1.1.0", "a8cb84be640e7998d734e05dc91f8c379c8bfb6c89cee1b3458371011f52f393", [:make, :mix, :rebar3], []}}
