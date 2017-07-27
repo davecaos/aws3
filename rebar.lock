@@ -1,7 +1,20 @@
-[{<<"cf">>,{pkg,<<"cf">>,<<"0.2.1">>},1},
+{"1.1.0",
+[{<<"base16">>,{pkg,<<"base16">>,<<"1.0.0">>},1},
+ {<<"cf">>,{pkg,<<"cf">>,<<"0.2.2">>},1},
  {<<"eini">>,{pkg,<<"eini">>,<<"1.2.4">>},1},
- {<<"erlcloud">>,{pkg,<<"erlcloud">>,<<"2.0.0">>},0},
- {<<"erlware_commons">>,{pkg,<<"erlware_commons">>,<<"0.21.0">>},0},
+ {<<"erlcloud">>,{pkg,<<"erlcloud">>,<<"2.2.12">>},0},
+ {<<"erlware_commons">>,{pkg,<<"erlware_commons">>,<<"1.0.0">>},0},
  {<<"jsx">>,{pkg,<<"jsx">>,<<"2.8.0">>},1},
- {<<"lhttpc">>,{pkg,<<"lhttpc">>,<<"1.4.0">>},1},
- {<<"minmay">>,{pkg,<<"minmay">>,<<"1.1.0">>},0}].
+ {<<"lhttpc">>,{pkg,<<"lhttpc">>,<<"1.5.3">>},1},
+ {<<"minmay">>,{pkg,<<"minmay">>,<<"1.2.0">>},0}]}.
+[
+{pkg_hash,[
+ {<<"base16">>, <<"283644E2B21BD5915ACB7178BED7851FB07C6E5749B8FAD68A53C501092176D9">>},
+ {<<"cf">>, <<"7F2913FFF90ABCABD0F489896CFEB0B0674F6C8DF6C10B17A83175448029896C">>},
+ {<<"eini">>, <<"ABD64A0533398A6D714D21219BB85F2D41FDB42665AC4080939B7BFA8E55F386">>},
+ {<<"erlcloud">>, <<"90C3FC2ADAA8CE39998149A64BE3E919501A86897AA624C6A869DC4D4BAF8FC6">>},
+ {<<"erlware_commons">>, <<"087467DE5833C0BB5B3CCDD387F9E9C1FB816A75B7A709629BF24B5ED3246C51">>},
+ {<<"jsx">>, <<"749BEC6D205C694AE1786D62CEA6CC45A390437E24835FD16D12D74F07097727">>},
+ {<<"lhttpc">>, <<"F87F1AA17C29EF57994DE47F679D2EF43E4CF7BF9A3F476F0B4243F2DE541D0A">>},
+ {<<"minmay">>, <<"D53A6B13A5F1990CC3121B4A1F55A0873EA3CDDE43FE4DCB29EE176BADB0D789">>}]}
+].

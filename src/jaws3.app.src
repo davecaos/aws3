@@ -2,7 +2,7 @@
  [
   {description,
    "An Erlang/Elixir application for upload files easily to AWS S3"},
-  {vsn, "0.1.0"},
+  {vsn, "0.1.1"},
   {applications,
     [kernel,
      stdlib,
@@ -13,6 +13,18 @@
     ]},
   {modules, []},
   {mod, {jaws3, []}},
+  {registered, []},
+  {files, [ "src/*"
+          , "include/*"
+          , "lib/*"
+          , "Makefile"
+          , "erlang.mk"
+          , "README.md"
+          , "rebar.config"
+          , "rebar.lock"
+          , "mix.exs"
+          , "mix.lock"
+          ]},
   {maintainers, ["David Cesar Hernan Cao"]},
   {licenses, ["MIT"]},
   {links, [{"Github", "https://github.com/davecaos/jaws3"}]},
