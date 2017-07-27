@@ -23,9 +23,9 @@ defmodule Jaws3.Mixfile do
 
   defp deps do
     [
-      {:erlcloud, "2.0.0"},
-      {:minmay, "1.1.0"},
-      {:erlware_commons, "0.21.0"}    
+      {:erlcloud, "~> 2.2"},
+      {:minmay, "~> 1.2"},
+      {:erlware_commons, "~> 1.0"}
     ]
   end
 
@@ -53,5 +53,5 @@ defmodule Jaws3.Mixfile do
       (cmd) ->
         Mix.Shell.cmd cmd, [], fn(x) -> Mix.Shell.IO.info(String.strip(x)) end
       end).(command)
-  end    
+  end
 end
