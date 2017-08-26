@@ -1,5 +1,5 @@
 # jaws3
-![s3](https://cloud.githubusercontent.com/assets/6124495/19840674/31f31654-9eda-11e6-9ef2-85b8839ef4e8.png)
+![S3](https://user-images.githubusercontent.com/6124495/29745357-ea11e7ba-8a8e-11e7-9a4e-b95823c12011.png)
 ---------
 An Erlang/Elixir application for upload files easily to AWS S3
 
