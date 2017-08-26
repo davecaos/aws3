@@ -1,4 +1,8 @@
 # jaws3
+[![Hex.pm](https://img.shields.io/hexpm/v/jaws3.svg?style=flat-square)](https://hex.pm/packages/jaws3)
+[![Hex.pm](https://img.shields.io/hexpm/dt/jaws3.svg?style=flat-square)](https://hex.pm/packages/jaws3)
+[![License](http://img.shields.io/hexpm/l/jaws3.svg?style=flat)](https://hex.pm/packages/jaws3)
+
 ![S3](https://user-images.githubusercontent.com/6124495/29745357-ea11e7ba-8a8e-11e7-9a4e-b95823c12011.png)
 ---------
 An Erlang/Elixir application for upload files easily to AWS S3
