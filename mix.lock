@@ -1,7 +1,8 @@
-%{"cf": {:hex, :cf, "0.2.1", "69d0b1349fd4d7d4dc55b7f407d29d7a840bf9a1ef5af529f1ebe0ce153fc2ab", [:rebar3], []},
+%{"base16": {:hex, :base16, "1.0.0", "283644e2b21bd5915acb7178bed7851fb07c6e5749b8fad68a53c501092176d9", [:rebar3], []},
+  "cf": {:hex, :cf, "0.2.2", "7f2913fff90abcabd0f489896cfeb0b0674f6c8df6c10b17a83175448029896c", [:rebar3], []},
   "eini": {:hex, :eini, "1.2.4", "abd64a0533398a6d714d21219bb85f2d41fdb42665ac4080939b7bfa8e55f386", [:rebar3], []},
-  "erlcloud": {:hex, :erlcloud, "2.0.0", "257a9e161d4b3e86571dc7d99d021a6884adefbf3895ebd6b3497b36466fd0ab", [:rebar3], [{:eini, "1.2.4", [hex: :eini, optional: false]}, {:jsx, "2.8.0", [hex: :jsx, optional: false]}, {:lhttpc, "1.4.0", [hex: :lhttpc, optional: false]}]},
-  "erlware_commons": {:hex, :erlware_commons, "0.21.0", "a04433071ad7d112edefc75ac77719dd3e6753e697ac09428fc83d7564b80b15", [:rebar3], [{:cf, "0.2.1", [hex: :cf, optional: false]}]},
+  "erlcloud": {:hex, :erlcloud, "2.2.16", "7c933f023975a4eec67cd07d3f33b092d1ca48c60213678f2c45475691e8037c", [:rebar3], [{:base16, "1.0.0", [hex: :base16, optional: false]}, {:eini, "1.2.4", [hex: :eini, optional: false]}, {:jsx, "2.8.0", [hex: :jsx, optional: false]}, {:lhttpc, "1.5.4", [hex: :lhttpc, optional: false]}]},
+  "erlware_commons": {:hex, :erlware_commons, "1.0.0", "087467de5833c0bb5b3ccdd387f9e9c1fb816a75b7a709629bf24b5ed3246c51", [:rebar3], [{:cf, "0.2.2", [hex: :cf, optional: false]}]},
   "jsx": {:hex, :jsx, "2.8.0", "749bec6d205c694ae1786d62cea6cc45a390437e24835fd16d12d74f07097727", [:mix, :rebar], []},
-  "lhttpc": {:hex, :lhttpc, "1.4.0", "61760afec1ddb98e47972be93b13fbff487a63d65b91a02c41122a0adf83da38", [:rebar3], []},
-  "minmay": {:hex, :minmay, "1.1.0", "a8cb84be640e7998d734e05dc91f8c379c8bfb6c89cee1b3458371011f52f393", [:make, :mix, :rebar3], []}}
+  "lhttpc": {:hex, :lhttpc, "1.5.4", "405e4f460d67fe8f43f0e6d64e4d168f8a5cff3ad34d78114688753daa80fbeb", [:rebar3], []},
+  "minmay": {:hex, :minmay, "1.2.0", "d53a6b13a5f1990cc3121b4a1f55a0873ea3cdde43fe4dcb29ee176badb0d789", [:make, :mix, :rebar3], []}}
